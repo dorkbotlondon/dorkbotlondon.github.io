@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+        <style>
+            body {
+                margin-left: 30px;
+                font-family: courier;
+            }
+        </style>
+    </head>
+
+    <body>
+        <a href="/">upcoming</a> / <a href="/about">about</a> / <a href="/archive">archive</a> / <a href="/speakers">speakers</a>
+
+        {{ content }}
+    </body>
+
+</html>

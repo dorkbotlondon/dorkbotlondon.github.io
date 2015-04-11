@@ -1,0 +1,95 @@
+limehouse_town_hall:
+    where:
+        The Boxing Club, Limehouse town hall, 646 Commercial Road, E14 7HA
+    where_html: |
+        The Boxing Club, Limehouse town hall,
+        <a href="http://maps.google.co.uk/maps?q=6%20Charlwood%20St,%20Pimlico,%20London%20SW1V%202EE">646 Commercial Road, E14 7HA</a>
+    directions: |
+        ==== How to get to Limehouse Town Hall: ====
+
+        == By Tube:
+        Limehouse DLR from Bank or Tower Gateway
+
+        == By Bus:
+        15 from Trafalgar Sq / 115 from Aldgate /
+        D6 from Hackney / D3 from Bethnal Green
+
+        Get onto Commercial Road and travel East from Aldgate or Whitechapel.
+        Stay on Commercial Road, passing Limehouse DLR on your right (and
+        going under a railway bridge) and you'll see a modern red brick church
+        also on the right, then a boarded up library. Just over the canal you'll
+        see the TownHall, with the Limehouse Hawksmoor church behind it. At this
+        point you should get off the bus/bicycle and come ring on the "Boxing Club"
+        bell (The top of the 4 main buttons).
+
+stream_arts:
+    where: 
+        Stream Arts, Rothbury Hall, London, SE10 0EF
+    where_html: |
+        <a href="http://streamarts.org.uk/">Stream Arts</a>, Rothbury Hall, London, SE10 0EF
+    directions: |
+        ==== How to get to Stream Arts: ====
+
+        Transport (note: our entrance is on Mauritius Rd!):
+        * ~12 min walk from North Greenwich Underground Jubilee station (Evan's
+          preferred route) or a 4 min bus ride from the station.
+        * Buses 188, 422, 108 to Blackwall Lane stop, which is right in front
+          of the building: <a href="http://www.tfl.gov.uk/tfl/gettingaround/maps/buses/?s=26004">http://www.tfl.gov.uk/tfl/gettingaround/maps/buses/?s=26004</a>
+        * It's about a 15 min walk from Cutty Sark DLR and downtown Greenwich
+          (plus you get to see the Cutty Sark at night, which is always cool)
+        * Maze Hill Rail station is about 12 minute walk
+
+stubnitz:
+    where: 
+        MS Stubnitz, Connaught Bridge, E16 2BU
+    where_html: 
+        MS Stubnitz, <a href="http://maps.google.co.uk/?q=loc%3A+n+51+30.34+e+0+02.2">Connaught Bridge, E16 2BU</a>
+    directions: |
+        Location
+        --------
+        MS Stubnitz,
+        Connaught Bridge
+        E16 2BU
+        map link: <a href="http://maps.google.co.uk/?q=loc%3A+n+51+30.34+e+0+02.2">http://maps.google.co.uk/?q=loc%3A+n+51+30.34+e+0+02.2</a>
+
+        The Motorship Stubnitz is an 80 meters long ex East German fishing
+        vessel transformed in 1992 into a moving platform for cultural research
+        and exchange.
+
+        Nearest public transport Pontoon Dock DLR.
+
+        Turn right out of the station and walk to the next roundabout, take
+        first exit. Walk to second roundabout (with sculpture of giant woman)
+        first exit of that roundabout is the gates to the mooring.
+
+walker_space:
+    where:
+        The Walker Space, 6 Penrose Way, Greenwich, Peninsula, London, SE10 0EW
+    where_html:
+        <a href="http://www.rave.ac.uk/about/maps-and-directions/">The Walker Space</a>, <a href="http://g.co/maps/qmnua">6 Penrose Way, Greenwich, Peninsula, London, SE10 0EW</a>
+    directions: |
+        Location
+
+        Get to Ravensbourne by following the directions here:
+
+        <a href="http://www.rave.ac.uk/about/maps-and-directions">http://www.rave.ac.uk/about/maps-and-directions</a>
+
+        The Walker Space, where Dorkbot will take place, is directly inside the
+        main (only) entrance, straight across from the doors.
+
+mat_lab:
+    where:
+        MAT Lab, Queen Mary University, 327 Mile End Road, London E1 4NS, E1 4NS
+    where_html:
+        MAT Lab, Queen Mary University, 327 Mile End Road, London E1 4NS, E1 4NS
+    directions: |
+        Location
+        MAT Lab, Room G2 Engineering Building, Queen Mary, University of
+        London, 327 Mile End Road, London E1 4NS
+
+        Nearest tube: Stepney Green / Mile End
+
+        Walk up or down Mile End Road until you're between Bancroft Road and
+        The Queen's Building there's a glass storefront with orange benches
+        and people milling about looking studious. That's the entrance. There
+        should be a 'dorkbot' sign there.

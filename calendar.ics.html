@@ -1,0 +1,20 @@
+---
+layout: none
+permalink: /feeds/icalendar
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:http://www.dorkbotlondon.org/
+METHOD:PUBLISH
+{% for post in site.posts limit:10 %}
+{% if post.start %}BEGIN:VEVENT
+UID:{{ post.date | date: "%Y%m%d" }}@dorkbotlondon.org
+SUMMARY:Dorkbot {{ post.title }}
+LOCATION:{{ site.data.locations.[post.where].where }}
+ORGANIZER;CN="Dorkbot London":MAILTO:hello@dorkbotlondon.org
+DTSTART:{{ post.start | date: "%Y%m%dT%H%M00Z" }}
+DTEND:{{ post.end | date: "%Y%m%dT%H%M00Z" }}
+DTSTAMP:{{ post.start | date: "%Y%m%dT%H%M00Z" }}
+CLASS:PUBLIC
+END:VEVENT{% endif %}{% endfor %}
+END:VCALENDAR
