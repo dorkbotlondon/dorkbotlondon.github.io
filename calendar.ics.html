@@ -4,17 +4,15 @@ permalink: /feeds/icalendar
 ---
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:http://www.dorkbotlondon.org/
-METHOD:PUBLISH
-{% for post in site.posts limit:10 %}
-{% if post.start %}BEGIN:VEVENT
+SUMMARY:"Dorkbot London Events"
+X-WR-CALDESC:"Dorkbot London Events"
+X-WR-CALNAME:"Dorkbot London Events"
+{% for post in site.posts limit:10 %}{% if post.start %}
+BEGIN:VEVENT
+SUMMARY:"Dorkbot {{ post.title }}"
+DTSTART;TZID=Europe/London;VALUE=DATE-TIME:{{ post.start | date: "%Y%m%dT%H%M00" }}
+DTEND;TZID=Europe/London;VALUE=DATE-TIME:{{ post.end | date: "%Y%m%dT%H%M00" }}
 UID:{{ post.date | date: "%Y%m%d" }}@dorkbotlondon.org
-SUMMARY:Dorkbot {{ post.title }}
-LOCATION:{{ site.data.locations.[post.where].where }}
-ORGANIZER;CN="Dorkbot London":MAILTO:hello@dorkbotlondon.org
-DTSTART:{{ post.start | date: "%Y%m%dT%H%M00Z" }}
-DTEND:{{ post.end | date: "%Y%m%dT%H%M00Z" }}
-DTSTAMP:{{ post.start | date: "%Y%m%dT%H%M00Z" }}
-CLASS:PUBLIC
+LOCATION:"{{ site.data.locations.[post.where].where }}"
 END:VEVENT{% endif %}{% endfor %}
 END:VCALENDAR
