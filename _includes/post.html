@@ -1,8 +1,7 @@
 {% include header.html %}
 <pre>
-{% if post.start %}<b>When:</b> {{ post.start | date:"%H:%M" }}-{{ post.end | date:"%H:%M" }}, {{ post.start | date:"%a %b %-d %Y" }}{% endif %}
-{% if post.where %}<b>Where:</b> {{ site.data.locations.[post.where].where_html }}
-(directions below)
+{% if post.start %}<b>When:</b>  {{ post.start | date:"%H:%M" }}-{{ post.end | date:"%H:%M" }}, {{ post.start | date:"%a %b %-d %Y" }}{% endif %}
+{% if post.where %}<b>Where:</b> {{ site.data.locations.[post.where].where_html }}       (directions below)
 {% endif %}
 {{ post.content }}
 {{ site.data.locations.[post.where].directions }}
