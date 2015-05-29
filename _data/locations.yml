@@ -4,12 +4,12 @@ limehouse_town_hall:
     where_html: |
         The Boxing Club, Limehouse town hall, <a href="http://maps.google.co.uk/maps?q=6%20Charlwood%20St,%20Pimlico,%20London%20SW1V%202EE">646 Commercial Road, E14 7HA</a>
     directions: |
-        ==== How to get to Limehouse Town Hall: ====
+        <b>==== How to get to Limehouse Town Hall: ====</b>
 
-        == By Tube:
+        <b>== By Tube:</b>
         Limehouse DLR from Bank or Tower Gateway
 
-        == By Bus:
+        <b>== By Bus:</b>
         15 from Trafalgar Sq / 115 from Aldgate /
         D6 from Hackney / D3 from Bethnal Green
 
@@ -27,7 +27,7 @@ stream_arts:
     where_html: |
         <a href="http://streamarts.org.uk/">Stream Arts</a>, Rothbury Hall, London, SE10 0EF
     directions: |
-        ==== How to get to Stream Arts: ====
+        <b>==== How to get to Stream Arts: ====</b>
 
         Transport (note: our entrance is on Mauritius Rd!):
         * ~12 min walk from North Greenwich Underground Jubilee station (Evan's

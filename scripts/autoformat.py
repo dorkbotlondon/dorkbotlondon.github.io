@@ -51,5 +51,7 @@ for post in sys.argv[1:]:
             flags=re.M
         )
 
+    content = re.sub("====(.*?)====", "<b>====\\1====</b>", content)
+
     with codecs.open(post, 'w', 'utf-8') as f:
         f.write(content)
