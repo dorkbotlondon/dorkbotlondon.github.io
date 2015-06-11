@@ -2,7 +2,7 @@ limehouse_town_hall:
     where:
         The Boxing Club, Limehouse town hall, 646 Commercial Road, E14 7HA
     where_html: |
-        The Boxing Club, Limehouse town hall, <a href="http://maps.google.co.uk/maps?q=6%20Charlwood%20St,%20Pimlico,%20London%20SW1V%202EE">646 Commercial Road, E14 7HA</a>
+        The Boxing Club, Limehouse town hall, <a href="http://maps.google.co.uk/maps?q=Limehouse%20Town%20Hall,%20London">646 Commercial Road, E14 7HA</a>
     directions: |
         <b>==== How to get to Limehouse Town Hall: ====</b>
 
