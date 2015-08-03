@@ -21,6 +21,21 @@ limehouse_town_hall:
         the bus/bicycle and come ring on the "Boxing Club" bell (The top of the 4 
         main buttons).
 
+dorkbike_2015:
+    where:
+        Olympic Park ArcelorMittal Orbit (south) to Gods Own Junkyard, Walthamstow
+    where_html: |
+        <a href="https://maps.google.com/maps?ll=51.538333%2C-0.013333&amp;q=51.538333%2C-0.013333&amp;hl=en&amp;t=m&amp;z=15">Olympic Park ArcelorMittal Orbit</a> (south) to <a href="https://www.google.co.uk/maps/place/God's+Own+Junkyard/@51.5840099,-0.0084168,15z/data=!4m2!3m1!1s0x0:0x736b3c7749367c3c?sa=X&ved=0CIkBEPwSMA1qFQoTCLuXlJPmjccCFWYG2wodFHoB8Q">Gods Own Junkyard, Walthamstow</a>
+    directions: |
+        <b>==== Directions: =====</b>
+
+        We'll start at 12 noon on the south side of the ArcelorMittal Orbit (<a href="https://maps.google.com/maps?ll=51.538333%2C-0.013333&amp;q=51.538333%2C-0.013333&amp;hl=en&amp;t=m&amp;z=15">the side
+        where you can see Canary Wharf...</a>)
+
+        (if anyone else is coming from South London I'll be heading over via the
+        Greenwich foot tunnel at 11am, contact me on 07742 711 026 if you need
+        directions - Dave Green)
+
 stream_arts:
     where: 
         Stream Arts, Rothbury Hall, London, SE10 0EF
