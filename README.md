@@ -19,7 +19,7 @@ Below the --- line, you can put whatever you like, it'll be inside a `<pre>` tag
 
 If you want to preview the website after you've added a new event or changed an old one, run `jekyll serve` (assuming you have it installed) and it'll give you a webserver address to visit.
 
-When you're done, `git add`, `git commit` and `git push` the changes.
+When you're done, `git add`, `git commit` and `git push` the changes [hello this is Dave Green - if you don't already have git set up on your local machine etc, you may find it easier to just edit the text files on the Github site, then when you save/"commit changes" the site seems to update itself within a few min automatically...]
 
 Adding new locations
 -----------------------------------------
