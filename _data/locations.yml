@@ -28,11 +28,11 @@ limehouse_town_hall:
 
 rca_fb03:
     where:
-        The Royal College of Art, Kensington campus, Darwin Building, room FB03 (Basement Lecture Theatre, see map?)
+        The Royal College of Art, Kensington campus, Darwin Building, room FB03 (Basement Lecture Theatre)
     where_html: |
-        The Royal College of Art, Kensington campus, Darwin Building, room FB03 (Basement Lecture Theatre, see map?)
+        The Royal College of Art, Kensington campus, Darwin Building, room FB03 (Basement Lecture Theatre, <a href="https://www.rca.ac.uk/contact-us/maps-visiting/">see map</a>)
     directions: |
-        The Royal College of Art, Kensington campus, Darwin Building, room FB03 (Basement Lecture Theatre, see map?)
+        The Royal College of Art, Kensington campus, Darwin Building, room FB03 (Basement Lecture Theatre, <a href="https://www.rca.ac.uk/contact-us/maps-visiting/">see map</a>)
 
 
 dorkbike_2015:
