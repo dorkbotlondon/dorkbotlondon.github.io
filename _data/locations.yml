@@ -183,3 +183,9 @@ richmix:
 space_studios:
     where:
         Space Studios
+
+cyberspace:
+    where:
+        This Dorkbot thing is happening online!
+    where_html:
+        This Dorkbot thing is happening online!
