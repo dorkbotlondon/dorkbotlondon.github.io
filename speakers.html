@@ -13,7 +13,7 @@ Dorkbot London has hosted at least {{ site.tags.size }} speakers since 2001
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
 
-<span id="{{ t }}"><a href="/speakers#{{ t }}">»</a> <b>{{ t }}</b></span>
+<span id="{{ t }}"><b>{{ t }}</b> <a href="/speakers#{{ t }}">»</a> </span>
 <ul>
 {% for post in posts reversed %}
   {% if post.tags contains t %}
