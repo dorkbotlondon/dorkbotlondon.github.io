@@ -3,13 +3,17 @@ layout: page
 title: Dorkbot Speakers
 permalink: /speakers/
 ---
+Dorkbot London has hosted at least {{ site.tags.size }} speakers since 2001
+
+<br><br>
 <blockquote><b>We're still slowly importing all the old dorkbotlondon events, this will be complete soon!</b></blockquote>
+<br>
 
 {% for tag in site.tags %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
 
-<span id="{{ t }}">{{ t }}<small> <a href="/speakers#{{ t }}">#</a></small></span>
+<span id="{{ t }}"><a href="/speakers#{{ t }}">»</a> <b>{{ t }}</b></span>
 <ul>
 {% for post in posts reversed %}
   {% if post.tags contains t %}
