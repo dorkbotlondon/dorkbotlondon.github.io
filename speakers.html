@@ -9,7 +9,7 @@ permalink: /speakers/
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
 
-{{ t }}
+<span id="{{ t }}">{{ t }}<small> <a href="/speakers#{{ t }}">#</a></small></span>
 <ul>
 {% for post in posts reversed %}
   {% if post.tags contains t %}
