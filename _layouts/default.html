@@ -6,8 +6,20 @@
         <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
         <style>
             body {
-                margin-left: 30px;
+                margin: auto;
+                max-width: 90%;
+                min-width: 480px;
                 font-family: courier;
+                font-size: 16px;
+                padding:0;
+                background-color: black;
+                color: #EEE;
+            }
+
+            section, article, p {
+                margin-bottom: 1.2rem;
+                margin-left: 0;
+                padding: 0;
             }
         </style>
     </head>
