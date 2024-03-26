@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
-        <style>
-            body {
-                margin: auto;
-                max-width: 90%;
-                min-width: 480px;
-                font-family: courier;
-                font-size: 16px;
-                padding:0;
-                background-color: black;
-                color: #EEE;
-            }
+<head>
+    <meta charset="utf-8"/>
+    <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: auto;
+            max-width: 90%;
+            min-width: 480px;
+            font-family: "Courier Prime", monospace;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            padding:0;
+            background-color: black;
+            color: #EEE;
+            line-height: 1.1;
+        }
+        
+        section, article, p {
+            margin-bottom: 1.2rem;
+            margin-left: 0;
+            padding: 0;
+        }
+        
+        a:link, a:visited,a:active {
+            font-weight: bold;
+            color: #f4fa83;
+        }
+        
+        .courier-prime-regular {
+            font-family: "Courier Prime", monospace;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        .courier-prime-bold {
+            font-family: "Courier Prime", monospace;
+            font-weight: 700;
+            font-style: normal;
+        }
+        
+        .courier-prime-regular-italic {
+            font-family: "Courier Prime", monospace;
+            font-weight: 400;
+            font-style: italic;
+        }
+        
+        .courier-prime-bold-italic {
+            font-family: "Courier Prime", monospace;
+            font-weight: 700;
+            font-style: italic;
+        }
+        
+    </style>
+</head>
 
-            section, article, p {
-                margin-bottom: 1.2rem;
-                margin-left: 0;
-                padding: 0;
-            }
-        </style>
-    </head>
-
-    <body>
-        <a href="/">upcoming</a> / <a href="/about">about</a> / <a href="/archive">archive</a> / <a href="/speakers">speakers</a>
-
-        {{ content }}
-    </body>
+<body>
+    <a href="/">upcoming</a> / <a href="/about">about</a> / <a href="/archive">archive</a> / <a href="/speakers">speakers</a>
+    
+    {{ content }}
+</body>
 
 </html>
