@@ -1,45 +1,68 @@
-#!/usr/bin/python
+#!/usr/bin/python3
+
 import sys
 import re
 import codecs
-from textwrap import TextWrapper
+import textwrap
 
 import autolink
 
 for post in sys.argv[1:]:
-    print "Autoformatting %s..." % post
+    print ("Autoformatting %s..." % post)
 
     with codecs.open(post, 'r', 'utf-8') as f:
         content = f.read()
 
-    content = re.sub(
-        "<.*?>(.*?)</.*?>",
-        "\\1",
-        content,
-        flags=re.M
-    )
-
-    wrapper = TextWrapper(
-        break_long_words=False,
-        break_on_hyphens=False,
-        width=80
-    )
+    # content = re.sub(
+    #     "<.*?>(.*?)</.*?>",
+    #     "\\1",
+    #     content,
+    #     flags=re.M
+    # )
 
     wrapped = ''
+
+    # ignore top header
+    is_header = False
+
     for line in content.splitlines():
-        prefix = ''
-        matches = re.match('^\s+', line)
-        if matches:
-            prefix = matches.group(0)
+        if re.match('^---', line) is not None:
+            is_header = not is_header
+            #print("Found header token")
+            wrapped += line + '\n'
 
-        wrapped += ('\n' + prefix).join(wrapper.wrap(line)) + '\n'
+            continue
+        elif is_header:
+            wrapped += line + '\n'
 
-    content = autolink.linkify(wrapped)
+            #print(f"In header: {line}")
+            continue
 
-    # Because autolink is buggy
-    content = content.replace("http://(http://", "http://")
-    content = content.replace(")\">", "\">")
+        # if already html, ignore and just add
+        if re.match('^\s*<', line) is not None:
+            #print(f"Line has HTML: {line}")
+            wrapped += line + '\n'
+        
+        else:
 
+            if re.search('a\s+href', line, re.UNICODE) is not None:
+                print(f"Found links in {line}")
+            else:
+                line = autolink.linkify(line)
+                # Because autolink is buggy
+                line = line.replace("http://(http://", "http://")
+                line = line.replace(")\">", "\">")
+
+            wrapped_line = textwrap.fill(line, width=80, initial_indent='', subsequent_indent='', expand_tabs=True,
+                        replace_whitespace=True, fix_sentence_endings=False, 
+                        break_long_words=False, drop_whitespace=True, 
+                        break_on_hyphens=False, tabsize=4, 
+                        max_lines=None, placeholder='')
+
+            wrapped += f'{wrapped_line}<br/>\n'
+
+    content = wrapped
+    
     # This looks weird, because it is. This is to deal with overlapping patterns.
     oldcontent = False
     while oldcontent != content:
