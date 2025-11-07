@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 import sys
 import re
 import codecs
@@ -26,7 +24,7 @@ for post in sys.argv[1:]:
     is_header = False
 
     for line in content.splitlines():
-        if re.match('^---', line) is not None:
+        if re.match(r"^---", line) is not None:
             is_header = not is_header
             #print("Found header token")
             wrapped += line + '\n'
@@ -39,19 +37,19 @@ for post in sys.argv[1:]:
             continue
 
         # if already html, ignore and just add
-        if re.match('^\s*<', line) is not None:
+        if re.match(r"^\s*<", line) is not None:
             #print(f"Line has HTML: {line}")
             wrapped += line + '\n'
         
         else:
 
-            if re.search('a\s+href', line, re.UNICODE) is not None:
+            if re.search(r"a\s+href", line, re.UNICODE) is not None:
                 print(f"Found links in {line}")
             else:
                 line = autolink.linkify(line)
                 # Because autolink is buggy
-                line = line.replace("http://(http://", "http://")
-                line = line.replace(")\">", "\">")
+                line = line.replace(r"http://(http://", r"http://")
+                line = line.replace(r")\">", r"\">")
 
             wrapped_line = textwrap.fill(line, width=80, initial_indent='', subsequent_indent='', expand_tabs=True,
                         replace_whitespace=True, fix_sentence_endings=False, 
@@ -68,13 +66,13 @@ for post in sys.argv[1:]:
     while oldcontent != content:
         oldcontent = content
         content = re.sub(
-            "(^|[ (])@([a-zA-Z0-9_]+)([. )]|$)", 
-            "\\1<a href='https://twitter.com/\\2'>@\\2</a>\\3", 
+            r"(^|[ (])@([a-zA-Z0-9_]+)([. )]|$)", 
+            r"\\1<a href='https://twitter.com/\\2'>@\\2</a>\\3", 
             content,
             flags=re.M
         )
 
-    content = re.sub("====(.*?)====", "<b>====\\1====</b>", content)
+    content = re.sub(r"====(.*?)====", "<b>====\\1====</b>", content)
 
     with codecs.open(post, 'w', 'utf-8') as f:
         f.write(content)
