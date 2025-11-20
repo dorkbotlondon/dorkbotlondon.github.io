@@ -1,14 +1,16 @@
 limehouse_town_hall:
     where:
-        The Boxing Club, Limehouse Town Hall, 646 Commercial Road, E14 7HA
+        Limehouse Town Hall, 646 Commercial Road, E14 7HA
     where_html: |
-        The Boxing Club, Limehouse Town Hall, <a href="http://maps.google.co.uk/maps?q=Limehouse%20Town%20Hall,%20London">646 Commercial Road, E14 7HA</a>
+        Limehouse Town Hall, <a href="http://maps.google.co.uk/maps?q=Limehouse%20Town%20Hall,%20London">646 Commercial Road, E14 7HA</a>
     directions: |
 
         <b>==== How to get to Limehouse Town Hall: ====</b>
 
         NB: Unfortunately Limehouse Town Hall is not wheelchair accessible as
-            there are steps from the street and up to the main hall.
+            there are many steps from the street and up to the main hall.
+
+        <a href="https://www.google.co.uk/maps/place/51%C2%B030'44.0%22N+0%C2%B001'53.2%22W/@51.5122061,-0.0315798,">Limehouse Town Hall on Google Maps</a>
 
         == By Tube: ==
         Limehouse DLR from Bank or Tower Gateway
@@ -16,17 +18,14 @@ limehouse_town_hall:
         == By Bus: ==
         15 from Trafalgar Sq / 115 from Aldgate /
         D6 from Hackney / D3 from Bethnal Green
+        
+        Beware, the <a href="https://www.google.co.uk/maps/place/51%C2%B030'44.0%22N+0%C2%B001'53.2%22W/@51.5122061,-0.0315798">Limehouse Town Hall front door</a>
+        is not in the centre of the postcode.
+        The Hall is directly opposite Salmon Lane on Commercial Road,
+        beside Newell Street, on the opposite side of the road from the big metal anchor.
 
-        Beware! Google's location for E14 7HA is a bit off, it's actually
-        opposite where Salmon Lane joins Commercial Road, or in other words...
-        Get onto Commercial Road and travel East from Aldgate or Whitechapel.
-        Stay on Commercial Road, passing Limehouse DLR on your right (and going
-        under a railway bridge) and you'll see a modern red brick church also
-        on the right, then a boarded up library. Just over the canal you'll see
-        the Town Hall, with the Limehouse Hawksmoor church behind it, on the
-        opposite side of the road from the big metal anchor. At this point you
-        should get off the bus/bicycle and come ring on the "Boxing Club" bell
-        (The top of the 4 main buttons).
+        == Intercom ==
+        Use the intercom on the door to call Main Hall.
 
         <a data-flickr-embed="true"  href="https://www.flickr.com/photos/loopzilla/2293345433/" title="Limehouse Town Hall"><img src="https://farm3.staticflickr.com/2095/2293345433_b53e981115.jpg" width="500" height="375" alt="Limehouse Town Hall"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
